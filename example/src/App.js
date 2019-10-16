@@ -7,14 +7,15 @@ export default class App extends Component {
     return (
       <Tabs >
         <Tab index={0} title="Hello word">
-          <input type="text" />
+          <h1>Tab 1</h1>
+          <input type="text" placeholder="tab 1"/>
         </Tab>
 
         <Tab index={1} title="Hello 1244ed,zed,ezd" checked
         >
-          <h2>Hello world</h2>
-          <p>Hello</p>
-          <p>lorem14</p>
+          <h2>Tab 2</h2>
+          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+         
         </Tab>
       </Tabs>
     );

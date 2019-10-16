@@ -15,12 +15,25 @@ npm install --save react-tabs-css
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-tabs-css'
+import { Tab, Tabs } from "react-tabs-css";
+import  'react-tabs-css/styles/react-tabs-css.css'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Tabs >
+        <Tab index={0} title="Tab 1">
+          <h1>Tab 1</h1>
+          <input type="text" placeholder="tab 1"/>
+        </Tab>
+
+        <Tab index={1} title="Tab 2" 
+        >
+          <h2>Tab 2</h2>
+          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+         
+        </Tab>
+      </Tabs>
     )
   }
 }

@@ -10,7 +10,7 @@
     float: left;
      
   }
-  .tab label {
+  .tab .tab_label {
     background: #fff; 
     padding: 10px; 
     border: 1px solid #ccc; 
@@ -21,7 +21,7 @@
     transition: background-color .17s linear;
     cursor: pointer;
   }
-  .tab [type=radio] {
+  .tab .tab_input {
     display: none;   
   }
   .content {
@@ -36,12 +36,12 @@
     transition: opacity .6s linear;
     opacity: 0;
   }
-  [type=radio]:checked ~ label {
+  .tab_input:checked ~ .tab_label {
     border-bottom: 4px solid red;
     transform: translate(0,5px);
     z-index: 2;
   }
-  [type=radio]:checked ~ label ~ .content {
+  .tab_input:checked ~ .tab_label ~ .content {
     z-index: 1;
     opacity: 1;
   }

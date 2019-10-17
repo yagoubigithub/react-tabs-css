@@ -16,7 +16,6 @@ npm install --save react-tabs-css
 import React, { Component } from 'react'
 
 import { Tab, Tabs } from "react-tabs-css";
-import  'react-tabs-css/styles/react-tabs-css.css'
 
 class Example extends Component {
   render () {

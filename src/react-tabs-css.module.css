@@ -32,7 +32,6 @@
     right: 0;
     bottom: 0;
     padding: 20px;
-    border: 1px solid #ccc; 
     transition: opacity .6s linear;
     opacity: 0;
   }

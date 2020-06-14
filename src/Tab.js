@@ -20,7 +20,7 @@ export default class Tab extends Component {
           type="radio"
           ref={input=>this.myinput = input}
           id={`tab-${index}`}
-          name="tab-group-1"
+          name={this.props.group}
           className={styles.tab_input}
         
          
@@ -28,6 +28,7 @@ export default class Tab extends Component {
         <label
           htmlFor={`tab-${index}`}
          className={styles.tab_label}
+         onClick={this.props.onClick}
         >
           {this.props.title}
         </label>

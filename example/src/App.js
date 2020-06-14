@@ -2,20 +2,25 @@ import React, { Component } from "react";
 
 import { Tab, Tabs } from "react-tabs-css";
 export default class App extends Component {
+  click =(id)=>{
+    console.log(id)
+  }
   render() {
     return (
       <Tabs >
-        <Tab index={0} title="Hello word">
-          <h1>Tab 1</h1>
+      {[1,2,3,4,5,6,7,8,9].map((item,index)=>{
+        return (<Tab index={index} title="Hello word" onClick={()=>this.click(index)}>
+          <h1>Tab {item}</h1>
+          <h1>Tab {item}</h1>
+          <h1>Tab {item}</h1>
+          <h1>Tab {item}</h1>
+          <p>lorem</p>
           <input type="text" placeholder="tab 1"/>
-        </Tab>
+        </Tab>)
+      })}
+        
 
-        <Tab index={1} title="Hello 1244ed,zed,ezd" checked
-        >
-          <h2>Tab 2</h2>
-          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-         
-        </Tab>
+      
       </Tabs>
     );
   }

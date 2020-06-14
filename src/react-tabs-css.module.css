@@ -1,13 +1,14 @@
 
   .tabs {
     position: relative;   
-    min-height: 200px; /* This part sucks */
     clear: both;
-    margin: 35px 0 25px;
+    margin: 45px 3px 25px;
     background: white;
+    min-height: 100% !important;
   }
   .tab {
     float: left;
+   
      
   }
   .tab .tab_label {
@@ -25,18 +26,23 @@
     display: none;   
   }
   .content {
+    
     position: absolute;
     top: -1px;
     left: 0;
-    background: white;
+    background-color: white;
     right: 0;
     bottom: 0;
-    padding: 20px;
+    height: max-content;
     transition: opacity .6s linear;
     opacity: 0;
+    border:1px solid rgba(0,0,0,0.4);
   }
   .tab_input:checked ~ .tab_label {
-    border-bottom: 4px solid red;
+    background-color: #111;
+    color: white;
+    border : 7px solid gray;
+    border-bottom: 0;
     transform: translate(0,5px);
     z-index: 2;
   }

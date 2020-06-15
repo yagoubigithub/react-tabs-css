@@ -4,7 +4,10 @@
     clear: both;
     margin: 45px 3px 25px;
     background: white;
-    min-height: 100% !important;
+    
+    min-height: 200px;
+   
+    
   }
   .tab {
     float: left;

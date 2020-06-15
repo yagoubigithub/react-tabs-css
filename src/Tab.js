@@ -11,16 +11,17 @@ export default class Tab extends Component {
     }
   }
   render() {
-    const { index } = this.props;
+    const { index , group ,title ,style } = this.props;
     return (
       <div
         className={styles.tab}
+        style={{...style}}
       >
         <input
           type="radio"
           ref={input=>this.myinput = input}
           id={`tab-${index}`}
-          name={this.props.group}
+          name={`group-${group}`}
           className={styles.tab_input}
         
          
@@ -30,7 +31,7 @@ export default class Tab extends Component {
          className={styles.tab_label}
          onClick={this.props.onClick}
         >
-          {this.props.title}
+          {title}
         </label>
 
         <div  className={styles.content}>{this.props.children}</div>

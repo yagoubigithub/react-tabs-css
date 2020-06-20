@@ -11,7 +11,7 @@ export default class Tab extends Component {
     }
   }
   render() {
-    const { index , group ,title ,style } = this.props;
+    const { index , group ,title ,style , active } = this.props;
     return (
       <div
         className={styles.tab}
@@ -23,6 +23,8 @@ export default class Tab extends Component {
           id={`tab-${index}`}
           name={`group-${group}`}
           className={styles.tab_input}
+          defaultChecked={active}
+          
         
          
         />

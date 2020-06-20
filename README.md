@@ -29,6 +29,7 @@ class Example extends Component {
         </Tab>
 
         <Tab index={1} title="Tab 2" 
+        active
         group="group-1"
         >
           <h2>Tab 2</h2>
@@ -45,10 +46,11 @@ class Example extends Component {
 - style : Object (exmple : ```style={{backgroundColor :  "red"}}```)
 
 ```Tab``` props : 
-- index : (required and unique) Number(exmple : ```index={0}```)
+- index* : (required and unique) Number(exmple : ```index={0}```)
 - style : Object (exmple : ```style={{backgroundColor :  "red"}}```)
-- group : String (exmple : ```group="group-1"```) all the tab inside the tabs should have the same group
+- group* : String (exmple : ```group="group-1"```) all the tab inside the tabs should have the same group
 - title : String (exmple : ```title="Hello world"```)
+- active : boolean (example : ```active={true})
 
 
 ## License
